@@ -1,16 +1,26 @@
 import Image from 'next/image';
 import mobileImage from '../../public/static/Images/illustration-sign-up-mobile.svg'
+import deskTopImage from '../../public/static/Images/illustration-sign-up-desktop.svg'
 import checkList from '../../public/static/Images/icon-list.svg'
 
 const SignUp = () => {
   return (
     <>
-    <div className="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className=" flex flex-col md:flex-row md:max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
    
     <Image
     priority   
     src={mobileImage}
     alt="background image"
+    className='image1'
+
+
+    />
+      <Image
+    priority   
+    src={deskTopImage}
+    alt="background image"
+    className='image2'
 
 
     />

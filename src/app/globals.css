@@ -26,3 +26,20 @@ p{
 .hover\:bg-tomato-800:hover{
     background-color: rgb(255 98 87 / var(--tw-bg-opacity));
 }
+
+@media (max-width: 640px) {
+ 
+    .image2 {
+        display: none
+    }
+ }
+
+
+
+
+ @media (min-width: 768px) {
+ 
+    .image1 {
+        display: none
+    }
+ }
