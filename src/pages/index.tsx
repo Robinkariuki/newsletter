@@ -4,9 +4,10 @@ import SignUp from './signup'
 
 const Home = () => {
   return (
-      
-      <SignUp/>
-      
+      <div className='flex items-center justify-center bg-Charcoal-grey'>
+         <SignUp/>
+      </div>
+     
       
   )
 }

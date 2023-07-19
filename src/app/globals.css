@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+
+
+
 h5{
     font-weight: 700;
     
@@ -42,4 +45,14 @@ p{
     .image1 {
         display: none
     }
+    .image2{
+        max-width: 40%;
+     
+    }
+    body{
+        background-color:rgb(52, 54, 76) ;
+    }
+
+
+  
  }
