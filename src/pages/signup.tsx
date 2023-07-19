@@ -2,6 +2,7 @@ import Image from 'next/image';
 import mobileImage from '../../public/static/Images/illustration-sign-up-mobile.svg'
 import deskTopImage from '../../public/static/Images/illustration-sign-up-desktop.svg'
 import checkList from '../../public/static/Images/icon-list.svg'
+import '../../public/static/css/signup.css'
 
 const SignUp = () => {
   return (

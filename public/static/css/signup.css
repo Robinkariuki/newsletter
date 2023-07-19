@@ -1,10 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-
-
 
 h5{
     font-weight: 700;
@@ -17,7 +10,7 @@ p{
     font-weight: 400;
 }
 
-/* .bg-Slate-Grey{
+.bg-Slate-Grey{
     background-color: rgb(	39, 41, 63);
 }
 
@@ -28,30 +21,29 @@ p{
 
 .hover\:bg-tomato-800:hover{
     background-color: rgb(255 98 87 / var(--tw-bg-opacity));
-} */
+}
 
-/* @media (max-width: 640px) {
+
+@media (max-width: 640px) {
  
     .image2 {
         display: none
     }
- } */
+ }
 
 
 
 
  @media (min-width: 768px) {
  
-    /* .image1 {
+    .image1 {
         display: none
     }
     .image2{
         max-width: 40%;
      
-    } */
-    body{
-        background-color:rgb(52, 54, 76) ;
     }
+
 
 
   
