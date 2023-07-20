@@ -10,7 +10,7 @@ p{
     font-weight: 400;
 }
 
-.bg-Slate-Grey{
+/* .bg-Slate-Grey{
     background-color: rgb(	39, 41, 63);
 }
 
@@ -21,7 +21,7 @@ p{
 
 .hover\:bg-tomato-800:hover{
     background-color: rgb(255 98 87 / var(--tw-bg-opacity));
-}
+} */
 
 
 @media (max-width: 640px) {
