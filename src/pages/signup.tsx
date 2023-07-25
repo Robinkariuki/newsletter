@@ -81,11 +81,11 @@ const SignUp = () => {
      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
      required/>
         <span className="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
-    Please enter a valid email address
+     valid email required
   </span>
   </div>
 
-  <button type="button" className="text-white bg-Slate-Grey hover:bg-tomato-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg w-full text-sm px-5 py-5 text-center mr-2 mb-2 dark:bg-tomato-800 dark:hover:bg-tomato-800 dark:focus:ring-red-300 ">Subscribe to monthly newsletter</button>
+  <button type="button" className="text-white bg-Slate-Grey hover:bg-tomato-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg w-full text-sm px-5 py-5 text-center mr-2 mb-2 dark:bg-tomato-800 dark:hover:bg-tomato-800 dark:focus:ring-red-300 ">Subscribe to monthly  newsletter</button>
     </form>
 
 
