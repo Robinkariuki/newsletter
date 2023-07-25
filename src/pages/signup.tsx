@@ -85,7 +85,7 @@ const SignUp = () => {
   </span>
   </div>
 
-  <button type="button" className="text-white bg-Slate-Grey hover:bg-tomato-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg w-full text-sm px-5 py-5 text-center mr-2 mb-2 dark:bg-tomato-800 dark:hover:bg-tomato-800 dark:focus:ring-red-300 ">Subscribe to monthly  newsletter</button>
+  <button type="button" className="text-white bg-Slate-Grey hover:bg-tomato-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg w-full text-sm px-5 py-5 text-center mr-2 mb-2 dark:bg-tomato-800 dark:hover:bg-tomato-800 dark:focus:ring-red-300  group-invalid:pointer-events-none group-invalid:opacity-30">Subscribe to monthly  newsletter</button>
     </form>
 
 
