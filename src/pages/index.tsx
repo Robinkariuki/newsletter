@@ -6,8 +6,8 @@ import Success from './success'
 const Home = () => {
   return (
       <div className='flex items-center justify-center bg-Charcoal-grey'>
-         {/* <SignUp/> */}
-         <Success/>
+         <SignUp/>
+         {/* <Success/> */}
       </div>
      
       
