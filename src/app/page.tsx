@@ -1,12 +1,38 @@
+'use client'
+
+import './globals.css';
 import Image from 'next/image';
 import mobileImage from '../../public/static/Images/illustration-sign-up-mobile.svg'
 import deskTopImage from '../../public/static/Images/illustration-sign-up-desktop.svg'
 import checkList from '../../public/static/Images/icon-list.svg'
 import '../../public/static/css/signup.css'
+// import React,{useState} from 'react';
+// import  Context  from '../../context/context'
+import { redirect } from 'next/navigation'
+import { useGlobalContext } from '../app/Context/store';
 
-const SignUp = () => {
+const Home = () => {
+
+   const {email,setEmail} = useGlobalContext();
+   console.log(email,'yui')
+   
+  //  const [email,setEmail] = useState<string>("");
+
+  //  const emailHandler =(e:React.FormEvent<HTMLInputElement>)=>{
+  //   e.preventDefault
+  //   setEmail(e.target.value)
+  //  }
+
+
+  const submitHandler = (e:React.SyntheticEvent)=>{
+    e.preventDefault()
+    redirect('/success')
+
+  }
+
+
   return (
-    <>
+    <div className='flex items-center justify-center bg-Charcoal-grey'>
     <div className=" flex flex-col  md:mt-40 md:p-4 md:max-h-fit md:flex-row-reverse md:max-w-3xl bg-white  md:border border-gray-200 rounded-lg  md:rounded-2xl md:shadow dark:bg-gray-800 dark:border-gray-700 ">
    
     <Image
@@ -67,17 +93,19 @@ const SignUp = () => {
 </ul>
         
         <form
-
+      
+         onSubmit={submitHandler}
         // noValidate
         >
     <div className="mb-6 mt-5">
     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
  
-    <input 
+    <input
      type="email"
      id="email"
      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 invalid:[&:not(:placeholder-shown):not(:focus)]:text-red-500 invalid:[&:not(:placeholder-shown):not(:focus)]:bg-red-50 peer"
-     placeholder="email@company.com" 
+     placeholder="email@company.com"
+     onChange={e => setEmail(e.currentTarget.value)} 
     //  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
      required/>
         <span className="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
@@ -93,8 +121,8 @@ const SignUp = () => {
 
 
 </div>
-    </>
+    </div>
   )
 }
 
-export default SignUp
+export default Home
