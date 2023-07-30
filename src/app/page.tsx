@@ -14,7 +14,7 @@ import { useGlobalContext } from '../Context/store';
 const Home = () => {
 
    const {email,setEmail} = useGlobalContext();
-   console.log(email)
+  
    
    const router  = useRouter();
    useEffect(() => {
