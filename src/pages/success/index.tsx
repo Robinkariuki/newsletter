@@ -5,7 +5,7 @@ import succcess from '../../../public/static/Images/icon-success.svg'
 import '../../../public/static/css/success.css'
 import 'src/app/globals.css'
 import { useGlobalContext } from '../../Context/store';
-import React,{useEffect, useLayoutEffect,useState} from 'react';
+import React,{useEffect,useState} from 'react';
 import { useRouter } from "next/navigation";
 
 const Success = () => {
@@ -24,7 +24,7 @@ const submitHandler = (e:React.SyntheticEvent)=>{
 
 }
 
-useLayoutEffect(()=>{
+useEffect(()=>{
 
     if(sessionStorage.getItem("state")){
     console.log((typeof(sessionStorage.getItem('state'))))

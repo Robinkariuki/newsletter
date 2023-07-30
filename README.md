@@ -27,7 +27,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [Author](#author)
 
 
-.**
+
 
 ## Overview
 
@@ -59,16 +59,15 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Tailwind css
+- Typescript
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+
 
 
 
 
 ## Author
-
-- Website - [Robin Kariuki](https://www.your-site.com)
 - Frontend Mentor - [@Robinkariuki](https://www.frontendmentor.io/profile/Robinkariuki)
 
 
