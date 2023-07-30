@@ -1,4 +1,4 @@
-import { GlobalContextProvider } from "./Context/store"
+import { GlobalContextProvider } from "../Context/store"
 
 export const metadata = {
   title: 'Next.js',

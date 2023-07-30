@@ -1,13 +1,43 @@
+"use client";
+
 import Image from 'next/image';
 import succcess from '../../../public/static/Images/icon-success.svg'
 import '../../../public/static/css/success.css'
 import 'src/app/globals.css'
-import { useGlobalContext } from '@/app/Context/store';
+import { useGlobalContext } from '../../Context/store';
+import React,{useEffect, useLayoutEffect,useState} from 'react';
+import { useRouter } from "next/navigation";
 
 const Success = () => {
-  //  const {email} = useGlobalContext();
+  
 
- 
+const {email,setEmail} = useGlobalContext();
+const [currentState,setCurrentState] = useState<string>('')
+
+const router  = useRouter();
+console.log(email)
+
+const submitHandler = (e:React.SyntheticEvent)=>{
+  e.preventDefault()
+  sessionStorage.clear()
+  router.push('/')
+
+}
+
+useLayoutEffect(()=>{
+
+    if(sessionStorage.getItem("state")){
+    console.log((typeof(sessionStorage.getItem('state'))))
+    setCurrentState(sessionStorage.getItem('state')!)
+  }else {
+    alert("no value")
+  }
+
+
+},[])
+
+
+
   return (
     
     <div className='flex items-center justify-center bg-Charcoal-grey'>
@@ -28,8 +58,8 @@ const Success = () => {
         
             <h5 className="mb-6 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Thanks for subscribing!</h5>
       
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">A confirmation email has been sent to <b></b> Please open it and click the button inside to confirm your subscription</p>
-        <button  type="button" className="text-white mt-40 md:mt-2 bg-Slate-Grey hover:bg-tomato-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg w-full text-sm px-5 py-5 text-center mr-2 mb-2 dark:bg-tomato-800 dark:hover:bg-tomato-800 dark:focus:ring-red-300">Dismiss message</button>
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">A confirmation email has been sent to <b>{currentState}</b> Please open it and click the button inside to confirm your subscription</p>
+        <button  type="submit" onClick={submitHandler} className="text-white mt-40 md:mt-2 bg-Slate-Grey hover:bg-tomato-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg w-full text-sm px-5 py-5 text-center mr-2 mb-2 dark:bg-tomato-800 dark:hover:bg-tomato-800 dark:focus:ring-red-300">Dismiss message</button>
     </div>
 </div>
 </div>

@@ -6,10 +6,17 @@ import React, { createContext,useState,ReactNode,useContext} from "react";
 type Email = string;
 
 type EmailState = {
-  email:Email 
+  email:Email,
   setEmail(email:Email):void;
 }
-const GlobalContext = createContext<EmailState | null>(null);
+
+
+const defaultState ={
+  email:'',
+  setEmail:(email:Email)=>{}
+} as EmailState
+
+const GlobalContext = createContext(defaultState);
 
 
 interface Props {
@@ -20,6 +27,7 @@ interface Props {
 
 
 export const GlobalContextProvider  = ({children}:Props)=>{
+  
 const [email,setEmail] = useState<Email>("");
 
 
@@ -36,4 +44,8 @@ return (
 }
 
 
-export  const useGlobalContext = () => useContext(GlobalContext);
+
+// export  const useGlobalContext = () => useContext(GlobalContext);
+export const useGlobalContext = () => {
+  return useContext(GlobalContext);
+};
