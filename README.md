@@ -50,7 +50,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
+- Solution URL: [](https://www.frontendmentor.io/solutions/responsive-newsletter-signup-using-nextjstypescript-and-tailwindcss-zQtPaSMD4T)
 - Live Site URL: [https://newsletter-weld-alpha.vercel.app/](https://your-live-site-url.com)
 
 ## My process
