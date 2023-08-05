@@ -9,7 +9,7 @@ import React,{useEffect,useState} from 'react';
 import { useRouter } from "next/navigation";
 
 const Success = () => {
-  
+localStorage.theme = 'light'
 
 const {email,setEmail} = useGlobalContext();
 const [currentState,setCurrentState] = useState<string>('')
