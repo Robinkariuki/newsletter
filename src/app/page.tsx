@@ -100,7 +100,7 @@ const Home = () => {
     <input
      type="email"
      id="email"
-     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 invalid:[&:not(:placeholder-shown):not(:focus)]:text-red-500 invalid:[&:not(:placeholder-shown):not(:focus)]:bg-red-50 peer"
+     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-5  invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 invalid:[&:not(:placeholder-shown):not(:focus)]:text-red-500 invalid:[&:not(:placeholder-shown):not(:focus)]:bg-red-50 peer"
      placeholder="email@company.com"
      onChange={e => setEmail(e.currentTarget.value)} 
      required/>
@@ -109,7 +109,7 @@ const Home = () => {
   </span>
   </div>
 
-  <button type="submit" className="text-white bg-Slate-Grey hover:bg-tomato-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg w-full text-sm px-5 py-5 text-center mr-2 mb-2 dark:bg-tomato-800 dark:hover:bg-tomato-800 dark:focus:ring-red-300 ">Subscribe to monthly  newsletter</button>
+  <button type="submit" className="text-white bg-Slate-Grey hover:bg-tomato-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg w-full text-sm px-5 py-5 text-center mr-2 mb-2 ">Subscribe to monthly  newsletter</button>
     </form>
 
 
