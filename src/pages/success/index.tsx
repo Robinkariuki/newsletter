@@ -9,7 +9,7 @@ import React,{useEffect,useState} from 'react';
 import { useRouter } from "next/navigation";
 
 const Success = () => {
-localStorage.theme = 'light'
+
 
 const {email,setEmail} = useGlobalContext();
 const [currentState,setCurrentState] = useState<string>('')
@@ -39,10 +39,10 @@ useEffect(()=>{
 
   return (
     
-    <div className='flex items-center justify-center bg-Charcoal-grey'>
+    <div className='flex items-center justify-center dark:bg-white  max-h-full bg-Charcoal-grey'>
 
    
-<div className="max-w-fit md:max-h-full mt-20 md:mt-40 p-8 md:max-w-lg md:bg-white md:border md:border-gray-200 md:rounded-3xl md:shadow dark:bg-gray-800 dark:border-gray-700">
+<div className="max-w-fit  mt-20 md:mt-40 p-8 md:max-w-lg md:bg-white md:border md:border-gray-200 md:rounded-3xl md:shadow dark:bg-gray-800 dark:border-gray-700">
     {/* <a href="#">
         <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
     </a> */}
