@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import succcess from '../../../public/static/Images/icon-success.svg'
 import '../../../public/static/css/success.css'
-import 'src/app/globals.css'
+import '../../app/globals.css'
 import { useGlobalContext } from '../../Context/store';
 import React,{useEffect,useState} from 'react';
 import { useRouter } from "next/navigation";
@@ -27,7 +27,6 @@ const submitHandler = (e:React.SyntheticEvent)=>{
 useEffect(()=>{
 
     if(sessionStorage.getItem("state")){
-    console.log((typeof(sessionStorage.getItem('state'))))
     setCurrentState(sessionStorage.getItem('state')!)
   }else {
     alert("no value")
@@ -43,7 +42,7 @@ useEffect(()=>{
     <div className='flex items-center justify-center bg-Charcoal-grey'>
 
    
-<div className="max-w-fit  mt-20 md:mt-40 p-8 md:max-w-lg md:bg-white md:border md:border-gray-200 md:rounded-3xl md:shadow dark:bg-gray-800 dark:border-gray-700">
+<div className="max-w-fit md:max-h-full mt-20 md:mt-40 p-8 md:max-w-lg md:bg-white md:border md:border-gray-200 md:rounded-3xl md:shadow dark:bg-gray-800 dark:border-gray-700">
     {/* <a href="#">
         <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
     </a> */}
