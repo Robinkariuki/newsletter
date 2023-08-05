@@ -39,7 +39,7 @@ useEffect(()=>{
 
   return (
     
-    <div className='flex items-center justify-center dark:bg-white  max-h-full bg-Charcoal-grey'>
+    <div className='flex items-center justify-center   max-h-full bg-Charcoal-grey'>
 
    
 <div className="max-w-fit  mt-20 md:mt-40 p-8 md:max-w-lg md:bg-white md:border md:border-gray-200 md:rounded-3xl md:shadow ">
