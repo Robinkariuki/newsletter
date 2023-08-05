@@ -30,7 +30,7 @@ const Home = () => {
 
 
   return (
-    <div className='flex items-center justify-center bg-Charcoal-grey'>
+    <div className='flex items-center justify-center '>
     <div className=" flex flex-col  md:mt-40 md:p-4 md:max-h-fit md:flex-row-reverse md:max-w-3xl bg-white  md:border border-gray-200 rounded-lg  md:rounded-2xl md:shadow dark:bg-gray-800 dark:border-gray-700 ">
    
     <Image

@@ -52,3 +52,12 @@ p{
 
   
  }
+
+
+ @media (prefers-color-scheme: dark) {
+    body {
+      background-color: white;
+      color: white;
+    }
+
+}
