@@ -52,11 +52,11 @@ const Home = () => {
     />
     <div className="p-5 space-x-3">
         
-            <p className="mb-2 text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">Stay Updated!</p>
+            <p className="mb-2 text-4xl  font-bold tracking-tight text-gray-900">Stay Updated!</p>
                
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Join 60,000+ product managers receiving monthly updates on:</p>
+        <p className="mb-3 font-normal text-gray-700">Join 60,000+ product managers receiving monthly updates on:</p>
 
-        <ul className="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+        <ul className="max-w-md space-y-1 text-gray-500 list-inside">
     <li className="flex items-start">
     <Image
     priority   
@@ -95,7 +95,7 @@ const Home = () => {
          onSubmit={submitHandler}
         >
     <div className="mb-6 mt-5">
-    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Email address</label>
  
     <input
      type="email"

@@ -57,7 +57,7 @@ useEffect(()=>{
         
             <h5 className="mb-6 text-5xl font-bold tracking-tight text-gray-900">Thanks for subscribing!</h5>
       
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">A confirmation email has been sent to <b>{currentState}</b> Please open it and click the button inside to confirm your subscription</p>
+        <p className="mb-3 font-normal text-gray-700 ">A confirmation email has been sent to <b>{currentState}</b> Please open it and click the button inside to confirm your subscription</p>
         <button  type="submit" onClick={submitHandler} className="text-white mt-40 md:mt-2 bg-Slate-Grey hover:bg-tomato-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg w-full text-sm px-5 py-5 text-center mr-2 mb-2">Dismiss message</button>
     </div>
 </div>
